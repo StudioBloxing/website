@@ -4,31 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Mathis Studio</title>
+  <title>Home - StudioBloxing</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to Mathis Studio</h1>
+    <h1>Welcome to StudioBloxing</h1>
   </header>
   <main>
-    <p>Yo 👋 Voici mes jeux Roblox. Clique sur un jeu pour en voir les détails ou y jouer !</p>
+    <p>Discover games created by StudioBloxing. Click on a game to see more info and play it.</p>
     <div id="gameContainer"></div>
   </main>
-
   <script>
     const games = [
       {
         id: "91209461076695",
-        name: "Game 1",
+        name: "[🚗 ] Steal A Garage",
         thumbnail: "https://tr.rbxcdn.com/9ad6e3cc93d8a4949315f34e201a0a96/768/432/Image/Png",
-        link: "https://www.roblox.com/games/91209461076695"
+        link: "91209461076695.html"
       },
       {
         id: "104747159676979",
-        name: "Game 2",
+        name: "[WIP] Build A Garden",
         thumbnail: "https://tr.rbxcdn.com/bb7fd88b4eaae9615c1c208cfa8accc7/768/432/Image/Png",
-        link: "https://www.roblox.com/games/104747159676979"
+        link: "104747159676979.html"
       }
     ];
     const container = document.getElementById('gameContainer');
@@ -36,7 +35,7 @@
       const div = document.createElement('div');
       div.className = 'game-card';
       div.innerHTML = `
-        <a href="${game.link}" target="_blank">
+        <a href="${game.link}">
           <img src="${game.thumbnail}" alt="${game.name}" />
           <h3>${game.name}</h3>
         </a>
