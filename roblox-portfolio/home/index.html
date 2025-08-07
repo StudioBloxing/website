@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathis' Roblox Games</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script defer src="/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1><a href="/home">StudioBloxing</a></h1>
+    <div class="view-toggle">
+      <button id="gridBtn">Grid</button>
+      <button id="slideshowBtn">Slideshow</button>
+    </div>
+  </header>
+
+  <main id="gameContainer" class="grid-view">
+    <!-- Cards injected by JS -->
+  </main>
+</body>
+
+<script>
+  if (window.location.pathname === "/") {
+    window.location.replace("/home");
+  }
+</script>
+</html>
